@@ -1,0 +1,32 @@
+[
+  {
+    "name": "旅客航空機（国内線）",
+    "emissionFactor": 0.0052502624888842,
+    "unit": "kgCO2/円"
+  },
+  {
+    "name": "旅客航空機（国際線）",
+    "emissionFactor": 0.00709572349270574,
+    "unit": "kgCO2/円"
+  },
+  {
+    "name": "旅客鉄道",
+    "emissionFactor": 0.00185377701736778,
+    "unit": "kgCO2/円"
+  },
+  {
+    "name": "旅客船舶",
+    "emissionFactor": 0.0501901303251617,
+    "unit": "kgCO2/円"
+  },
+  {
+    "name": "自動車（バス(営業用乗合)）",
+    "emissionFactor": 0.00471085811938121,
+    "unit": "kgCO2/円"
+  },
+  {
+    "name": "自動車（タクシー・ハイヤー）",
+    "emissionFactor": 0.00331300961659669,
+    "unit": "kgCO2/円"
+  }
+]

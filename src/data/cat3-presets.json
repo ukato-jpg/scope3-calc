@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "energyType": "原油（コンデンセートを除く）",
+    "ideaProductCode": "053111000mJPN"
+  },
+  {
+    "id": 2,
+    "energyType": "原油のうちコンデンセート（NGL）",
+    "ideaProductCode": "053114000pJPN"
+  },
+  {
+    "id": 3,
+    "energyType": "ナフサ",
+    "ideaProductCode": "171112000pJPN"
+  },
+  {
+    "id": 4,
+    "energyType": "灯油",
+    "ideaProductCode": "171114000pJPN"
+  },
+  {
+    "id": 5,
+    "energyType": "軽油",
+    "ideaProductCode": "171115000pJPN"
+  },
+  {
+    "id": 6,
+    "energyType": "A重油",
+    "ideaProductCode": "171116000pJPN"
+  },
+  {
+    "id": 7,
+    "energyType": "B重油",
+    "ideaProductCode": "171117000pJPN"
+  },
+  {
+    "id": 8,
+    "energyType": "C重油",
+    "ideaProductCode": "171118000pJPN"
+  },
+  {
+    "id": 9,
+    "energyType": "石油アスファルト",
+    "ideaProductCode": "171122000pJPN"
+  },
+  {
+    "id": 10,
+    "energyType": "石油コークス",
+    "ideaProductCode": "179929100pJPN"
+  },
+  {
+    "id": 11,
+    "energyType": "液化石油ガス（LPG）",
+    "ideaProductCode": "171123000pJPN"
+  },
+  {
+    "id": 12,
+    "energyType": "液化天然ガス（LNG)",
+    "ideaProductCode": "053113000mJPN"
+  },
+  {
+    "id": 13,
+    "energyType": "原料炭",
+    "ideaProductCode": "052111000mJPN"
+  },
+  {
+    "id": 14,
+    "energyType": "一般炭",
+    "ideaProductCode": "052112000mJPN"
+  },
+  {
+    "id": 15,
+    "energyType": "石炭コークス",
+    "ideaProductCode": "173111000pJPN"
+  },
+  {
+    "id": 16,
+    "energyType": "コールタール",
+    "ideaProductCode": "173113000pJPN"
+  },
+  {
+    "id": 17,
+    "energyType": "コークス炉ガス、高炉ガス、転炉ガス",
+    "ideaProductCode": "173112000pJPN"
+  },
+  {
+    "id": 18,
+    "energyType": "都市ガス",
+    "ideaProductCode": "341111000pJPN"
+  },
+  {
+    "id": 19,
+    "energyType": "ジェット燃料油",
+    "ideaProductCode": "171113000pJPN"
+  },
+  {
+    "id": 20,
+    "energyType": "ガソリン",
+    "ideaProductCode": "171111000pJPN"
+  },
+  {
+    "id": 22,
+    "energyType": "蒸気、温水、冷水",
+    "ideaProductCode": "351111300pJPN"
+  },
+  {
+    "id": 23,
+    "energyType": "電気",
+    "ideaProductCode": "331131322pJPN"
+  }
+]

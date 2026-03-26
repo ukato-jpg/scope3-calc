@@ -1,0 +1,896 @@
+[
+  {
+    "code": "00-0000",
+    "subCode": null,
+    "name": "合計",
+    "emissionFactor": 3.49680278132082
+  },
+  {
+    "code": "01-0000",
+    "subCode": null,
+    "name": "農林水産業",
+    "emissionFactor": 4.071129592286245
+  },
+  {
+    "code": "01-0010",
+    "subCode": "01-0010",
+    "name": "耕種農業",
+    "emissionFactor": 3.55970981454308
+  },
+  {
+    "code": "01-0020",
+    "subCode": "01-0020",
+    "name": "畜産",
+    "emissionFactor": 5.981725583670525
+  },
+  {
+    "code": "01-0030",
+    "subCode": "01-0030",
+    "name": "農業サービス",
+    "emissionFactor": 3.334112375991136
+  },
+  {
+    "code": "01-0040",
+    "subCode": "01-0040",
+    "name": "林業",
+    "emissionFactor": 4.016846327165292
+  },
+  {
+    "code": "01-0050",
+    "subCode": "01-0050",
+    "name": "漁業",
+    "emissionFactor": 4.09891077915635
+  },
+  {
+    "code": "02-0000",
+    "subCode": null,
+    "name": "鉱業",
+    "emissionFactor": 3.7111838680396074
+  },
+  {
+    "code": "02-0060",
+    "subCode": "02-0060",
+    "name": "金属鉱物",
+    "emissionFactor": 3.819731175538349
+  },
+  {
+    "code": "02-0070",
+    "subCode": "02-0070",
+    "name": "非金属鉱物",
+    "emissionFactor": 3.686994199814886
+  },
+  {
+    "code": "02-0080",
+    "subCode": "02-0080",
+    "name": "石炭・原油・天然ガス",
+    "emissionFactor": 3.754787337806315
+  },
+  {
+    "code": "03-0000",
+    "subCode": null,
+    "name": "食料品",
+    "emissionFactor": 3.148323512739172
+  },
+  {
+    "code": "03-0090",
+    "subCode": "03-0090",
+    "name": "食料品",
+    "emissionFactor": 3.1388795620786394
+  },
+  {
+    "code": "03-0100",
+    "subCode": "03-0100",
+    "name": "飲料",
+    "emissionFactor": 3.121915263120273
+  },
+  {
+    "code": "03-0110",
+    "subCode": "03-0110",
+    "name": "飼料・有機質肥料（除別掲）",
+    "emissionFactor": 3.4233767015666174
+  },
+  {
+    "code": "03-0120",
+    "subCode": "03-0120",
+    "name": "たばこ",
+    "emissionFactor": 3.2474437667211515
+  },
+  {
+    "code": "04-0000",
+    "subCode": null,
+    "name": "繊維製品",
+    "emissionFactor": 3.07040377719928
+  },
+  {
+    "code": "04-0130",
+    "subCode": "04-0130",
+    "name": "繊維工業製品",
+    "emissionFactor": 3.1380030772923546
+  },
+  {
+    "code": "04-0140",
+    "subCode": "04-0140",
+    "name": "衣服・その他の繊維既製品",
+    "emissionFactor": 2.924201276218106
+  },
+  {
+    "code": "05-0000",
+    "subCode": null,
+    "name": "パルプ・紙・木製品",
+    "emissionFactor": 3.0898840223736075
+  },
+  {
+    "code": "05-0150",
+    "subCode": "05-0150",
+    "name": "製材・木製品",
+    "emissionFactor": 3.527798487623976
+  },
+  {
+    "code": "05-0160",
+    "subCode": "05-0160",
+    "name": "家具・装備品",
+    "emissionFactor": 3.3990226021750374
+  },
+  {
+    "code": "05-0170",
+    "subCode": "05-0170",
+    "name": "パルプ・紙・板紙・加工紙",
+    "emissionFactor": 2.7391840078124807
+  },
+  {
+    "code": "05-0180",
+    "subCode": "05-0180",
+    "name": "紙加工品",
+    "emissionFactor": 3.4449503405288975
+  },
+  {
+    "code": "06-0000",
+    "subCode": null,
+    "name": "化学製品",
+    "emissionFactor": 2.7343046932438644
+  },
+  {
+    "code": "06-0200",
+    "subCode": "06-0200",
+    "name": "化学肥料",
+    "emissionFactor": 2.6743598524235734
+  },
+  {
+    "code": "06-0210",
+    "subCode": "06-0210",
+    "name": "無機化学工業製品",
+    "emissionFactor": 2.7643482095503837
+  },
+  {
+    "code": "06-0220",
+    "subCode": "06-0220",
+    "name": "石油化学基礎製品",
+    "emissionFactor": 2.7077274933694673
+  },
+  {
+    "code": "06-0230",
+    "subCode": "06-0230",
+    "name": "有機化学工業製品\n（除石油化学基礎製品）",
+    "emissionFactor": 2.8498949543776466
+  },
+  {
+    "code": "06-0240",
+    "subCode": "06-0240",
+    "name": "合成樹脂",
+    "emissionFactor": 2.7103778596212904
+  },
+  {
+    "code": "06-0250",
+    "subCode": "06-0250",
+    "name": "化学繊維",
+    "emissionFactor": 2.600288600738435
+  },
+  {
+    "code": "06-0260",
+    "subCode": "06-0260",
+    "name": "医薬品",
+    "emissionFactor": 2.8296045108241725
+  },
+  {
+    "code": "06-0270",
+    "subCode": "06-0270",
+    "name": "化学最終製品（除医薬品）",
+    "emissionFactor": 2.5079304765306047
+  },
+  {
+    "code": "07-0000",
+    "subCode": null,
+    "name": "石油・石炭製品",
+    "emissionFactor": 2.9143342836580794
+  },
+  {
+    "code": "07-0280",
+    "subCode": "07-0280",
+    "name": "石油製品",
+    "emissionFactor": 2.848508337988573
+  },
+  {
+    "code": "07-0290",
+    "subCode": "07-0290",
+    "name": "石炭製品",
+    "emissionFactor": 3.4142217904038072
+  },
+  {
+    "code": "08-0000",
+    "subCode": null,
+    "name": "窯業・土石製品",
+    "emissionFactor": 3.2414820598397776
+  },
+  {
+    "code": "08-0330",
+    "subCode": "08-0330",
+    "name": "ガラス・ガラス製品",
+    "emissionFactor": 3.4630819909569936
+  },
+  {
+    "code": "08-0340",
+    "subCode": "08-0340",
+    "name": "セメント・セメント製品",
+    "emissionFactor": 2.919557314731739
+  },
+  {
+    "code": "08-0350",
+    "subCode": "08-0350",
+    "name": "陶磁器",
+    "emissionFactor": 3.3749225821868176
+  },
+  {
+    "code": "08-0360",
+    "subCode": "08-0360",
+    "name": "その他の窯業・土石製品",
+    "emissionFactor": 3.2961729440579908
+  },
+  {
+    "code": "09-0000",
+    "subCode": null,
+    "name": "鉄鋼",
+    "emissionFactor": 3.2105986782624427
+  },
+  {
+    "code": "09-0370",
+    "subCode": "09-0370",
+    "name": "銑鉄・粗鋼",
+    "emissionFactor": 3.5832516563408703
+  },
+  {
+    "code": "09-0380",
+    "subCode": "09-0380",
+    "name": "鋼材",
+    "emissionFactor": 3.0480020434004653
+  },
+  {
+    "code": "09-0390",
+    "subCode": "09-0390",
+    "name": "鋳鍛造品",
+    "emissionFactor": 3.6684560031486857
+  },
+  {
+    "code": "09-0400",
+    "subCode": "09-0400",
+    "name": "その他の鉄鋼製品",
+    "emissionFactor": 3.577827935843894
+  },
+  {
+    "code": "10-0000",
+    "subCode": null,
+    "name": "非鉄金属",
+    "emissionFactor": 3.499457805973166
+  },
+  {
+    "code": "10-0410",
+    "subCode": "10-0410",
+    "name": "非鉄金属製錬・精製",
+    "emissionFactor": 3.4673924587154272
+  },
+  {
+    "code": "10-0420",
+    "subCode": "10-0420",
+    "name": "非鉄金属加工製品",
+    "emissionFactor": 3.513626487292389
+  },
+  {
+    "code": "11-0000",
+    "subCode": null,
+    "name": "金属製品",
+    "emissionFactor": 3.245371206907062
+  },
+  {
+    "code": "11-0430",
+    "subCode": "11-0430",
+    "name": "建設・建築用金属製品",
+    "emissionFactor": 3.282712577467475
+  },
+  {
+    "code": "11-0440",
+    "subCode": "11-0440",
+    "name": "その他の金属製品",
+    "emissionFactor": 3.2265046653905345
+  },
+  {
+    "code": "12-0000",
+    "subCode": null,
+    "name": "一般機械",
+    "emissionFactor": 3.345634696599871
+  },
+  {
+    "code": "12-0450",
+    "subCode": "12-0450",
+    "name": "一般産業機械",
+    "emissionFactor": 3.4356082318875742
+  },
+  {
+    "code": "12-0460",
+    "subCode": "12-0460",
+    "name": "特殊産業機械",
+    "emissionFactor": 3.3304468097056006
+  },
+  {
+    "code": "12-0470",
+    "subCode": "12-0470",
+    "name": "その他の一般機械器具及び部品",
+    "emissionFactor": 3.204855744876266
+  },
+  {
+    "code": "12-0480",
+    "subCode": "12-0480",
+    "name": "事務用・サービス用機器",
+    "emissionFactor": 3.3067255034150618
+  },
+  {
+    "code": "13-0000",
+    "subCode": null,
+    "name": "電気機械",
+    "emissionFactor": 2.8708532880310234
+  },
+  {
+    "code": "13-0490",
+    "subCode": "13-0490",
+    "name": "産業用電気機器",
+    "emissionFactor": 3.0080551824377686
+  },
+  {
+    "code": "13-0500",
+    "subCode": "13-0500",
+    "name": "電子応用装置・電子計測器",
+    "emissionFactor": 2.3041328608232656
+  },
+  {
+    "code": "13-0510",
+    "subCode": "13-0510",
+    "name": "その他の電気機器",
+    "emissionFactor": 2.7371469062895053
+  },
+  {
+    "code": "13-0520",
+    "subCode": "13-0520",
+    "name": "民生用電気機器",
+    "emissionFactor": 3.0868226802024425
+  },
+  {
+    "code": "14-0000",
+    "subCode": null,
+    "name": "情報・通信機器",
+    "emissionFactor": 2.5575648184919584
+  },
+  {
+    "code": "14-0530",
+    "subCode": "14-0530",
+    "name": "通信機械・同関連機器",
+    "emissionFactor": 2.7245560212513347
+  },
+  {
+    "code": "14-0540",
+    "subCode": "14-0540",
+    "name": "電子計算機・同付属装置",
+    "emissionFactor": 2.268601384434434
+  },
+  {
+    "code": "15-0000",
+    "subCode": null,
+    "name": "電子部品",
+    "emissionFactor": 2.722024969698799
+  },
+  {
+    "code": "15-0550",
+    "subCode": "15-0550",
+    "name": "半導体素子・集積回路",
+    "emissionFactor": 2.8126364707212232
+  },
+  {
+    "code": "15-0560",
+    "subCode": "15-0560",
+    "name": "その他の電子部品",
+    "emissionFactor": 2.461692798172488
+  },
+  {
+    "code": "16-0000",
+    "subCode": null,
+    "name": "輸送機械",
+    "emissionFactor": 3.4295667419544715
+  },
+  {
+    "code": "16-0570",
+    "subCode": "16-0570",
+    "name": "乗用車",
+    "emissionFactor": 3.2786671886209398
+  },
+  {
+    "code": "16-0580",
+    "subCode": "16-0580",
+    "name": "その他の自動車",
+    "emissionFactor": 3.665096758537954
+  },
+  {
+    "code": "16-0590",
+    "subCode": "16-0590",
+    "name": "自動車部品・同付属品",
+    "emissionFactor": 3.4394039748919276
+  },
+  {
+    "code": "16-0600",
+    "subCode": "16-0600",
+    "name": "船舶・同修理",
+    "emissionFactor": 3.450911183922893
+  },
+  {
+    "code": "16-0610",
+    "subCode": "16-0610",
+    "name": "その他の輸送機械・同修理",
+    "emissionFactor": 3.4909996196232624
+  },
+  {
+    "code": "16-0611",
+    "subCode": "16-0611",
+    "name": "うち鉄道車両・同修理",
+    "emissionFactor": 3.3549580522595175
+  },
+  {
+    "code": "17-0000",
+    "subCode": null,
+    "name": "精密機械",
+    "emissionFactor": 2.9601221045691046
+  },
+  {
+    "code": "17-0620",
+    "subCode": "17-0620",
+    "name": "精密機械",
+    "emissionFactor": 2.9601221045691046
+  },
+  {
+    "code": "18-0000",
+    "subCode": null,
+    "name": "その他の製造工業製品",
+    "emissionFactor": 3.142599541534248
+  },
+  {
+    "code": "18-0190",
+    "subCode": "18-0190",
+    "name": "印刷・製版・製本",
+    "emissionFactor": 2.7580019911503784
+  },
+  {
+    "code": "18-0300",
+    "subCode": "18-0300",
+    "name": "プラスチック製品",
+    "emissionFactor": 3.320122301132406
+  },
+  {
+    "code": "18-0310",
+    "subCode": "18-0310",
+    "name": "ゴム製品",
+    "emissionFactor": 3.1885852602454117
+  },
+  {
+    "code": "18-0320",
+    "subCode": "18-0320",
+    "name": "なめし革・毛皮・同製品",
+    "emissionFactor": 3.221476334205853
+  },
+  {
+    "code": "18-0630",
+    "subCode": "18-0630",
+    "name": "その他の製造工業製品",
+    "emissionFactor": 3.2009324752185573
+  },
+  {
+    "code": "18-0640",
+    "subCode": "18-0640",
+    "name": "再生資源回収・加工処理",
+    "emissionFactor": 3.508311828912408
+  },
+  {
+    "code": "19-0000",
+    "subCode": null,
+    "name": "建設",
+    "emissionFactor": 3.4064484819121614
+  },
+  {
+    "code": "19-0650",
+    "subCode": "19-0650",
+    "name": "建築",
+    "emissionFactor": 3.393237827248709
+  },
+  {
+    "code": "19-0660",
+    "subCode": "19-0660",
+    "name": "建設補修",
+    "emissionFactor": 3.3499021036665155
+  },
+  {
+    "code": "19-0680",
+    "subCode": "19-0680",
+    "name": "土木",
+    "emissionFactor": 3.4313058545219537
+  },
+  {
+    "code": "20-0000",
+    "subCode": null,
+    "name": "電力・ガス・熱供給",
+    "emissionFactor": 3.2782226469363738
+  },
+  {
+    "code": "20-0690",
+    "subCode": "20-0690",
+    "name": "電力",
+    "emissionFactor": 3.3008563164948557
+  },
+  {
+    "code": "20-0700",
+    "subCode": "20-0700",
+    "name": "ガス・熱供給",
+    "emissionFactor": 3.1543230583744077
+  },
+  {
+    "code": "21-0000",
+    "subCode": null,
+    "name": "水道・廃棄物処理",
+    "emissionFactor": 4.011796509546848
+  },
+  {
+    "code": "21-0710",
+    "subCode": "21-0710",
+    "name": "水道",
+    "emissionFactor": 4.1218357900485865
+  },
+  {
+    "code": "21-0720",
+    "subCode": "21-0720",
+    "name": "廃棄物処理",
+    "emissionFactor": 3.8285061126505084
+  },
+  {
+    "code": "22-0000",
+    "subCode": null,
+    "name": "商業",
+    "emissionFactor": 3.3463580204415386
+  },
+  {
+    "code": "22-0731",
+    "subCode": "22-0731",
+    "name": "卸売",
+    "emissionFactor": 3.279031307570547
+  },
+  {
+    "code": "22-0732",
+    "subCode": "22-0732",
+    "name": "小売",
+    "emissionFactor": 3.3947902411132493
+  },
+  {
+    "code": "23-0000",
+    "subCode": null,
+    "name": "金融・保険",
+    "emissionFactor": 1.8446958754903484
+  },
+  {
+    "code": "23-0740",
+    "subCode": "23-0740",
+    "name": "金融・保険",
+    "emissionFactor": 1.8446958754903484
+  },
+  {
+    "code": "24-0000",
+    "subCode": null,
+    "name": "不動産",
+    "emissionFactor": 3.7701689362670843
+  },
+  {
+    "code": "24-0750",
+    "subCode": "24-0750",
+    "name": "不動産仲介及び賃貸",
+    "emissionFactor": 3.4187341800124935
+  },
+  {
+    "code": "24-0760",
+    "subCode": "24-0760",
+    "name": "住宅賃貸料",
+    "emissionFactor": 3.7877496870590783
+  },
+  {
+    "code": "25-0000",
+    "subCode": null,
+    "name": "運輸",
+    "emissionFactor": 3.9235553138096715
+  },
+  {
+    "code": "25-0780",
+    "subCode": "25-0780",
+    "name": "鉄道輸送",
+    "emissionFactor": 4.20305244531842
+  },
+  {
+    "code": "25-0790",
+    "subCode": "25-0790",
+    "name": "道路輸送（除自家輸送）",
+    "emissionFactor": 3.282793724064395
+  },
+  {
+    "code": "25-0810",
+    "subCode": "25-0810",
+    "name": "水運",
+    "emissionFactor": 4.486000631645904
+  },
+  {
+    "code": "25-0820",
+    "subCode": "25-0820",
+    "name": "航空輸送",
+    "emissionFactor": 2.9849111510601207
+  },
+  {
+    "code": "25-0830",
+    "subCode": "25-0830",
+    "name": "貨物利用運送",
+    "emissionFactor": 3.7402330866517834
+  },
+  {
+    "code": "25-0840",
+    "subCode": "25-0840",
+    "name": "倉庫",
+    "emissionFactor": 3.380883814790345
+  },
+  {
+    "code": "25-0850",
+    "subCode": "25-0850",
+    "name": "運輸付帯サービス",
+    "emissionFactor": 4.311999603965917
+  },
+  {
+    "code": "25-0851",
+    "subCode": "25-0851",
+    "name": "うち水運施設管理",
+    "emissionFactor": 4.145700088885134
+  },
+  {
+    "code": "25-0852",
+    "subCode": "25-0852",
+    "name": "うち航空施設管理",
+    "emissionFactor": 4.1004348017323
+  },
+  {
+    "code": "26-0000",
+    "subCode": null,
+    "name": "情報通信",
+    "emissionFactor": 3.12115834853643
+  },
+  {
+    "code": "26-0860",
+    "subCode": "26-0860",
+    "name": "通信",
+    "emissionFactor": 3.30830131965865
+  },
+  {
+    "code": "26-0870",
+    "subCode": "26-0870",
+    "name": "放送",
+    "emissionFactor": 3.4648943232372726
+  },
+  {
+    "code": "26-0880",
+    "subCode": "26-0880",
+    "name": "情報サービス",
+    "emissionFactor": 2.2755006323306297
+  },
+  {
+    "code": "26-0890",
+    "subCode": "26-0890",
+    "name": "インターネット附随サービス",
+    "emissionFactor": 3.43337465269558
+  },
+  {
+    "code": "26-0900",
+    "subCode": "26-0900",
+    "name": "映像・文字情報制作",
+    "emissionFactor": 3.0186385088939796
+  },
+  {
+    "code": "27-0000",
+    "subCode": null,
+    "name": "公務",
+    "emissionFactor": 3.4340638572629447
+  },
+  {
+    "code": "27-0911",
+    "subCode": "27-0911",
+    "name": "公務（中央）",
+    "emissionFactor": 3.9525456079110723
+  },
+  {
+    "code": "27-0912",
+    "subCode": "27-0912",
+    "name": "公務（地方）",
+    "emissionFactor": 3.132545559222224
+  },
+  {
+    "code": "28-0000",
+    "subCode": null,
+    "name": "教育・研究",
+    "emissionFactor": 3.773176479587442
+  },
+  {
+    "code": "28-0920",
+    "subCode": "28-0920",
+    "name": "教育",
+    "emissionFactor": 3.855791814549683
+  },
+  {
+    "code": "28-0930",
+    "subCode": "28-0930",
+    "name": "研究",
+    "emissionFactor": 3.608121356645986
+  },
+  {
+    "code": "29-0000",
+    "subCode": null,
+    "name": "医療・保健・社会保障・介護",
+    "emissionFactor": 3.3363080288073426
+  },
+  {
+    "code": "29-0940",
+    "subCode": "29-0940",
+    "name": "医療・保健",
+    "emissionFactor": 3.2863826738959383
+  },
+  {
+    "code": "29-0950",
+    "subCode": "29-0950",
+    "name": "社会保障",
+    "emissionFactor": 3.7595083228609574
+  },
+  {
+    "code": "29-0960",
+    "subCode": "29-0960",
+    "name": "介護",
+    "emissionFactor": 3.7240015147747507
+  },
+  {
+    "code": "30-0000",
+    "subCode": null,
+    "name": "その他公共サービス",
+    "emissionFactor": 3.8058357286129336
+  },
+  {
+    "code": "30-0970",
+    "subCode": "30-0970",
+    "name": "その他の公共サービス",
+    "emissionFactor": 3.8058357286129336
+  },
+  {
+    "code": "31-0000",
+    "subCode": null,
+    "name": "対事業所サービス",
+    "emissionFactor": 3.12739471703819
+  },
+  {
+    "code": "31-0980",
+    "subCode": "31-0980",
+    "name": "広告",
+    "emissionFactor": 2.2934607362082122
+  },
+  {
+    "code": "31-0990",
+    "subCode": "31-0990",
+    "name": "物品賃貸サービス",
+    "emissionFactor": 3.1269860116490698
+  },
+  {
+    "code": "31-1000",
+    "subCode": "31-1000",
+    "name": "自動車・機械修理",
+    "emissionFactor": 3.521447579563285
+  },
+  {
+    "code": "31-1010",
+    "subCode": "31-1010",
+    "name": "その他の対事業所サービス",
+    "emissionFactor": 3.4026763444332984
+  },
+  {
+    "code": "32-0000",
+    "subCode": null,
+    "name": "対個人サービス",
+    "emissionFactor": 3.5597646203969076
+  },
+  {
+    "code": "32-1020",
+    "subCode": "32-1020",
+    "name": "娯楽サービス",
+    "emissionFactor": 3.707387410216425
+  },
+  {
+    "code": "32-1030",
+    "subCode": "32-1030",
+    "name": "飲食店",
+    "emissionFactor": 3.2797805038164975
+  },
+  {
+    "code": "32-1040",
+    "subCode": "32-1040",
+    "name": "宿泊業",
+    "emissionFactor": 3.679918967496335
+  },
+  {
+    "code": "32-1050",
+    "subCode": "32-1050",
+    "name": "洗濯・理容・美容・浴場業",
+    "emissionFactor": 3.459546705438605
+  },
+  {
+    "code": "32-1060",
+    "subCode": "32-1060",
+    "name": "その他の対個人サービス",
+    "emissionFactor": 3.4542028691819304
+  },
+  {
+    "code": "34-0000",
+    "subCode": null,
+    "name": "分類不明",
+    "emissionFactor": 3.020243122223611
+  },
+  {
+    "code": "34-1080",
+    "subCode": "34-1080",
+    "name": "分類不明",
+    "emissionFactor": 3.020243122223611
+  },
+  {
+    "code": "35-0000",
+    "subCode": null,
+    "name": "その他",
+    "emissionFactor": 3.9619566131415977
+  },
+  {
+    "code": "35-0001",
+    "subCode": "35-0001",
+    "name": "道路",
+    "emissionFactor": 4.640036513
+  },
+  {
+    "code": "35-0002",
+    "subCode": "35-0002",
+    "name": "住宅",
+    "emissionFactor": 3.4272168022084553
+  },
+  {
+    "code": "35-0003",
+    "subCode": "35-0003",
+    "name": "環境衛生",
+    "emissionFactor": 4.449048198
+  },
+  {
+    "code": "35-0004",
+    "subCode": "35-0004",
+    "name": "国土保全",
+    "emissionFactor": 4.458323449634193
+  },
+  {
+    "code": "35-0005",
+    "subCode": "35-0005",
+    "name": "土地造成",
+    "emissionFactor": 4.43940596
+  }
+]

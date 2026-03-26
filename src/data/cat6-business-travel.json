@@ -1,0 +1,10 @@
+{
+  "perEmployee": {
+    "factor": 0.130373426552145,
+    "unit": "tCO2/人・年"
+  },
+  "perNight": {
+    "factor": 31.53223799117,
+    "unit": "kgCO2/泊"
+  }
+}
