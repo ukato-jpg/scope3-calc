@@ -1,9 +1,23 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { TooltipProvider } from '@/components/ui/tooltip'
+import { AppShell } from '@/components/layout/AppShell'
+import { Dashboard } from '@/components/dashboard/Dashboard'
+import { CategoryRouter } from '@/components/categories/CategoryRouter'
+import { SettingsPage } from '@/components/settings/SettingsPage'
+
 function App() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <h1 className="text-2xl font-bold p-8">Scope3 GHG排出量算定ツール</h1>
-      <p className="px-8 text-muted-foreground">準備中...</p>
-    </div>
+    <BrowserRouter>
+      <TooltipProvider>
+        <Routes>
+          <Route element={<AppShell />}>
+            <Route index element={<Dashboard />} />
+            <Route path="category/:id" element={<CategoryRouter />} />
+            <Route path="settings" element={<SettingsPage />} />
+          </Route>
+        </Routes>
+      </TooltipProvider>
+    </BrowserRouter>
   )
 }
 
