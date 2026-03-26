@@ -1,12 +1,14 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { useAppStore } from '@/store/app-store'
+import { IdeaImport } from './IdeaImport'
+import { DataManagement } from './DataManagement'
+import type { GwpGeneration } from '@/types/common'
 
 export function SettingsPage() {
   const settings = useAppStore((s) => s.settings)
   const updateSettings = useAppStore((s) => s.updateSettings)
-  const ideaDbImported = useAppStore((s) => s.ideaDbImported)
-  const ideaDbCount = useAppStore((s) => s.ideaDbCount)
 
   return (
     <div className="space-y-6 max-w-2xl">
@@ -34,6 +36,22 @@ export function SettingsPage() {
               onChange={(e) => updateSettings({ reportingYear: Number(e.target.value) })}
               className="mt-1 w-32"
             />
+          </div>
+          <div>
+            <label className="text-sm font-medium">GWP世代（Cat.11 GHG直接排出に適用）</label>
+            <Select
+              value={settings.gwpGeneration}
+              onValueChange={(v) => { if (v) updateSettings({ gwpGeneration: v as GwpGeneration }) }}
+            >
+              <SelectTrigger className="mt-1 w-48">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="ar6">AR6 (IPCC 2021)</SelectItem>
+                <SelectItem value="ar5">AR5 (IPCC 2013)</SelectItem>
+                <SelectItem value="ar4">AR4 (IPCC 2007)</SelectItem>
+              </SelectContent>
+            </Select>
           </div>
         </CardContent>
       </Card>
@@ -67,28 +85,8 @@ export function SettingsPage() {
         </CardContent>
       </Card>
 
-      <Card>
-        <CardHeader>
-          <CardTitle>IDEA データベース</CardTitle>
-          <CardDescription>
-            IDEA Ver.3.5の排出原単位データベースをインポートします
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          {ideaDbImported ? (
-            <div className="text-sm">
-              <span className="text-green-600 font-medium">インポート済み</span>
-              <span className="text-muted-foreground ml-2">
-                ({ideaDbCount.toLocaleString()} レコード)
-              </span>
-            </div>
-          ) : (
-            <div className="text-sm text-muted-foreground">
-              未インポート — Phase 5で実装予定
-            </div>
-          )}
-        </CardContent>
-      </Card>
+      <IdeaImport />
+      <DataManagement />
     </div>
   )
 }
