@@ -48,7 +48,31 @@ export function AppSidebar() {
         </SidebarGroup>
 
         <SidebarGroup>
-          <SidebarGroupLabel>カテゴリ</SidebarGroupLabel>
+          <SidebarGroupLabel>Scope 1, 2</SidebarGroupLabel>
+          <SidebarGroupContent>
+            <SidebarMenu>
+              <SidebarMenuItem>
+                <SidebarMenuButton
+                  isActive={location.pathname === '/scope1'}
+                  render={<NavLink to="/scope1" />}
+                >
+                  <span className="truncate text-xs">Scope 1: 直接排出</span>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+              <SidebarMenuItem>
+                <SidebarMenuButton
+                  isActive={location.pathname === '/scope2'}
+                  render={<NavLink to="/scope2" />}
+                >
+                  <span className="truncate text-xs">Scope 2: 間接排出</span>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+
+        <SidebarGroup>
+          <SidebarGroupLabel>Scope 3 カテゴリ</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {CATEGORIES.map((cat) => (

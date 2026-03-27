@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { nanoid } from 'nanoid'
-import type { AllCategoryData } from '@/types/categories'
+import type { AllCategoryData, Scope1Entry, Scope2Data } from '@/types/categories'
 
 function createEmptyData(): AllCategoryData {
   return {
@@ -23,9 +23,17 @@ function createEmptyData(): AllCategoryData {
   }
 }
 
+function createEmptyScope2(): Scope2Data {
+  return { electricity: [], heat: [] }
+}
+
 type CategoryState = {
   data: AllCategoryData
+  scope1: Scope1Entry[]
+  scope2: Scope2Data
   updateCategory: <K extends keyof AllCategoryData>(key: K, value: AllCategoryData[K]) => void
+  updateScope1: (entries: Scope1Entry[]) => void
+  updateScope2: (data: Scope2Data) => void
   resetAll: () => void
 }
 
@@ -33,9 +41,13 @@ export const useCategoryStore = create<CategoryState>()(
   persist(
     (set) => ({
       data: createEmptyData(),
+      scope1: [],
+      scope2: createEmptyScope2(),
       updateCategory: (key, value) =>
         set((state) => ({ data: { ...state.data, [key]: value } })),
-      resetAll: () => set({ data: createEmptyData() }),
+      updateScope1: (entries) => set({ scope1: entries }),
+      updateScope2: (data) => set({ scope2: data }),
+      resetAll: () => set({ data: createEmptyData(), scope1: [], scope2: createEmptyScope2() }),
     }),
     { name: 'scope3-category-data' },
   ),

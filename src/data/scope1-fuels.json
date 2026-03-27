@@ -1,0 +1,90 @@
+[
+  {
+    "name": "ガソリン",
+    "unit": "L",
+    "factor": 2.322,
+    "factorUnit": "kg-CO2/L",
+    "description": "自動車用ガソリン等",
+    "category": "液体燃料"
+  },
+  {
+    "name": "軽油",
+    "unit": "L",
+    "factor": 2.585,
+    "factorUnit": "kg-CO2/L",
+    "description": "ディーゼル車・発電機等",
+    "category": "液体燃料"
+  },
+  {
+    "name": "灯油",
+    "unit": "L",
+    "factor": 2.489,
+    "factorUnit": "kg-CO2/L",
+    "description": "暖房・給湯等",
+    "category": "液体燃料"
+  },
+  {
+    "name": "A重油",
+    "unit": "L",
+    "factor": 2.710,
+    "factorUnit": "kg-CO2/L",
+    "description": "ボイラー・工業炉等",
+    "category": "液体燃料"
+  },
+  {
+    "name": "B重油",
+    "unit": "L",
+    "factor": 2.985,
+    "factorUnit": "kg-CO2/L",
+    "description": "大型ボイラー等",
+    "category": "液体燃料"
+  },
+  {
+    "name": "C重油",
+    "unit": "L",
+    "factor": 3.000,
+    "factorUnit": "kg-CO2/L",
+    "description": "大型ボイラー・船舶等",
+    "category": "液体燃料"
+  },
+  {
+    "name": "液化石油ガス(LPG)",
+    "unit": "kg",
+    "factor": 3.000,
+    "factorUnit": "kg-CO2/kg",
+    "description": "プロパンガス等",
+    "category": "気体燃料"
+  },
+  {
+    "name": "都市ガス",
+    "unit": "m3",
+    "factor": 2.234,
+    "factorUnit": "kg-CO2/m3",
+    "description": "13A等の都市ガス",
+    "category": "気体燃料"
+  },
+  {
+    "name": "液化天然ガス(LNG)",
+    "unit": "kg",
+    "factor": 2.698,
+    "factorUnit": "kg-CO2/kg",
+    "description": "天然ガス（液化）",
+    "category": "気体燃料"
+  },
+  {
+    "name": "一般炭",
+    "unit": "kg",
+    "factor": 2.330,
+    "factorUnit": "kg-CO2/kg",
+    "description": "石炭（一般用）",
+    "category": "固体燃料"
+  },
+  {
+    "name": "コークス",
+    "unit": "kg",
+    "factor": 2.897,
+    "factorUnit": "kg-CO2/kg",
+    "description": "製鉄用等",
+    "category": "固体燃料"
+  }
+]

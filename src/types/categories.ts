@@ -5,6 +5,36 @@ export type BaseEntry = {
 }
 
 // ============================================================
+// Scope 1: 燃料の燃焼による直接排出
+// ============================================================
+export type Scope1Entry = BaseEntry & {
+  fuelType: string         // 燃料種類（プリセット名）
+  usage: number            // 使用量
+  unit: string             // 単位
+  emissionFactor: number   // 排出係数 (kg-CO2/単位)
+}
+
+// ============================================================
+// Scope 2: 購入した電気・熱の使用
+// ============================================================
+export type Scope2ElectricityEntry = BaseEntry & {
+  utility: string          // 電気事業者名
+  usage: number            // 使用量 (kWh)
+  emissionFactor: number   // 排出係数 (kg-CO2/kWh)
+}
+
+export type Scope2HeatEntry = BaseEntry & {
+  heatType: string         // 蒸気/温水/冷水
+  usage: number            // 使用量 (GJ)
+  emissionFactor: number   // 排出係数 (kg-CO2/GJ)
+}
+
+export type Scope2Data = {
+  electricity: Scope2ElectricityEntry[]
+  heat: Scope2HeatEntry[]
+}
+
+// ============================================================
 // Cat.1: 購入した製品・サービス
 // ============================================================
 export type Cat1Entry = BaseEntry & {

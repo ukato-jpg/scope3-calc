@@ -9,6 +9,9 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 import { useAppStore } from '@/store/app-store'
 import { useCategoryStore } from '@/store/category-store'
 import { aggregateAll } from '@/engine/aggregator'
+import { calculateScope1 } from '@/engine/scope1'
+import { calculateScope2 } from '@/engine/scope2'
+import { sumEmissions } from '@/engine/common'
 import { findByCode } from '@/db/idea-repository'
 import { CATEGORIES } from '@/lib/constants'
 
@@ -25,11 +28,20 @@ const CHART_COLORS = [
 export function Dashboard() {
   const settings = useAppStore((s) => s.settings)
   const data = useCategoryStore((s) => s.data)
+  const scope1Entries = useCategoryStore((s) => s.scope1)
+  const scope2Data = useCategoryStore((s) => s.scope2)
   const navigate = useNavigate()
 
+  // Scope1,2の計算値（入力がある場合はそちらを優先、なければ設定画面の手入力値）
+  const scope1Calculated = useMemo(() => sumEmissions(calculateScope1(scope1Entries)), [scope1Entries])
+  const scope2Results = useMemo(() => calculateScope2(scope2Data), [scope2Data])
+  const scope2Calculated = useMemo(() => sumEmissions([...scope2Results.electricity, ...scope2Results.heat]), [scope2Results])
+  const scope1Total = scope1Entries.length > 0 ? scope1Calculated : settings.scope1Emission
+  const scope2Total = scope2Data.electricity.length > 0 || scope2Data.heat.length > 0 ? scope2Calculated : settings.scope2Emission
+
   const summary = useMemo(() => {
-    return aggregateAll(data, findByCode, settings.gwpGeneration, settings.scope1Emission, settings.scope2Emission)
-  }, [data, settings])
+    return aggregateAll(data, findByCode, settings.gwpGeneration, scope1Total, scope2Total)
+  }, [data, settings, scope1Total, scope2Total])
 
   const barData = useMemo(() =>
     summary.categories

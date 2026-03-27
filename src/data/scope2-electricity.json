@@ -1,0 +1,95 @@
+{
+  "description": "電気事業者別排出係数（調整後排出係数）令和4年度実績",
+  "source": "環境省・経済産業省公表値",
+  "utilities": [
+    {
+      "name": "全国平均",
+      "factor": 0.457,
+      "factorUnit": "kg-CO2/kWh",
+      "description": "電気事業者を特定しない場合"
+    },
+    {
+      "name": "北海道電力",
+      "factor": 0.601,
+      "factorUnit": "kg-CO2/kWh",
+      "description": ""
+    },
+    {
+      "name": "東北電力",
+      "factor": 0.468,
+      "factorUnit": "kg-CO2/kWh",
+      "description": ""
+    },
+    {
+      "name": "東京電力エナジーパートナー",
+      "factor": 0.457,
+      "factorUnit": "kg-CO2/kWh",
+      "description": ""
+    },
+    {
+      "name": "中部電力ミライズ",
+      "factor": 0.438,
+      "factorUnit": "kg-CO2/kWh",
+      "description": ""
+    },
+    {
+      "name": "北陸電力",
+      "factor": 0.510,
+      "factorUnit": "kg-CO2/kWh",
+      "description": ""
+    },
+    {
+      "name": "関西電力",
+      "factor": 0.352,
+      "factorUnit": "kg-CO2/kWh",
+      "description": ""
+    },
+    {
+      "name": "中国電力",
+      "factor": 0.568,
+      "factorUnit": "kg-CO2/kWh",
+      "description": ""
+    },
+    {
+      "name": "四国電力",
+      "factor": 0.420,
+      "factorUnit": "kg-CO2/kWh",
+      "description": ""
+    },
+    {
+      "name": "九州電力",
+      "factor": 0.347,
+      "factorUnit": "kg-CO2/kWh",
+      "description": ""
+    },
+    {
+      "name": "沖縄電力",
+      "factor": 0.698,
+      "factorUnit": "kg-CO2/kWh",
+      "description": ""
+    }
+  ],
+  "heat": [
+    {
+      "name": "蒸気",
+      "unit": "GJ",
+      "factor": 56.1,
+      "factorUnit": "kg-CO2/GJ",
+      "description": "購入蒸気"
+    },
+    {
+      "name": "温水",
+      "unit": "GJ",
+      "factor": 56.1,
+      "factorUnit": "kg-CO2/GJ",
+      "description": "購入温水"
+    },
+    {
+      "name": "冷水",
+      "unit": "GJ",
+      "factor": 56.1,
+      "factorUnit": "kg-CO2/GJ",
+      "description": "購入冷水"
+    }
+  ]
+}
