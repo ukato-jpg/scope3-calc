@@ -116,7 +116,13 @@ export function Cat2Page() {
                         <SelectContent>
                           {capitalGoodsList.map((cg) => (
                             <SelectItem key={cg.code} value={cg.code}>
-                              {cg.name}（{cg.emissionFactor} tCO2eq/百万円）
+                              <div>
+                                <div>{cg.subCode ? '　' : ''}{cg.name}</div>
+                                <div className="text-[10px] text-muted-foreground">
+                                  {cg.code} — {cg.emissionFactor.toFixed(2)} tCO2eq/百万円
+                                  {!cg.subCode && ' (大分類)'}
+                                </div>
+                              </div>
                             </SelectItem>
                           ))}
                         </SelectContent>

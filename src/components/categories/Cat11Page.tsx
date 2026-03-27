@@ -319,7 +319,12 @@ export function Cat11Page() {
                           <SelectContent>
                             {gwpRecords.map((rec) => (
                               <SelectItem key={rec.code} value={rec.name}>
-                                {rec.name}
+                                <div>
+                                  <div>{rec.name}</div>
+                                  <div className="text-[10px] text-muted-foreground">
+                                    GWP: AR6={rec.ar6.toLocaleString()} / AR5={rec.ar5.toLocaleString()} / AR4={rec.ar4.toLocaleString()}
+                                  </div>
+                                </div>
                               </SelectItem>
                             ))}
                           </SelectContent>

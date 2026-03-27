@@ -2,31 +2,37 @@
   {
     "name": "旅客航空機（国内線）",
     "emissionFactor": 0.0052502624888842,
-    "unit": "kgCO2/円"
+    "unit": "kgCO2/円",
+    "description": "ANA・JAL等の国内航空便"
   },
   {
     "name": "旅客航空機（国際線）",
     "emissionFactor": 0.00709572349270574,
-    "unit": "kgCO2/円"
+    "unit": "kgCO2/円",
+    "description": "国際線の航空便（海外出張等）"
   },
   {
     "name": "旅客鉄道",
     "emissionFactor": 0.00185377701736778,
-    "unit": "kgCO2/円"
+    "unit": "kgCO2/円",
+    "description": "JR・私鉄・地下鉄・新幹線等"
   },
   {
     "name": "旅客船舶",
     "emissionFactor": 0.0501901303251617,
-    "unit": "kgCO2/円"
+    "unit": "kgCO2/円",
+    "description": "フェリー・客船・高速船等"
   },
   {
     "name": "自動車（バス(営業用乗合)）",
     "emissionFactor": 0.00471085811938121,
-    "unit": "kgCO2/円"
+    "unit": "kgCO2/円",
+    "description": "路線バス・高速バス・空港リムジン等"
   },
   {
     "name": "自動車（タクシー・ハイヤー）",
     "emissionFactor": 0.00331300961659669,
-    "unit": "kgCO2/円"
+    "unit": "kgCO2/円",
+    "description": "タクシー・ハイヤー"
   }
 ]

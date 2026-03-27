@@ -32,6 +32,7 @@ export type TransportFactorRecord = {
   name: string
   emissionFactor: number
   unit: string
+  description?: string
 }
 
 /** Cat.7用 通勤排出原単位 */
@@ -39,6 +40,7 @@ export type CommutingFactorRecord = {
   name: string
   emissionFactor: number
   unit: string
+  description?: string
 }
 
 /** Cat.11用 GWP係数 */

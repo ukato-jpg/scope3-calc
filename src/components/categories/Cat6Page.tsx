@@ -191,7 +191,10 @@ export function Cat6Page() {
                             <SelectContent>
                               {transportFactorList.map((tf) => (
                                 <SelectItem key={tf.name} value={tf.name}>
-                                  {tf.name}
+                                  <div>
+                                    <div>{tf.name}</div>
+                                    <div className="text-[10px] text-muted-foreground">{tf.description} — {tf.emissionFactor.toFixed(5)} {tf.unit}</div>
+                                  </div>
                                 </SelectItem>
                               ))}
                             </SelectContent>

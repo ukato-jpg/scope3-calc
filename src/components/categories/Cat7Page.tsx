@@ -163,7 +163,10 @@ export function Cat7Page() {
                             <SelectContent>
                               {transportFactorList.map((tf) => (
                                 <SelectItem key={tf.name} value={tf.name}>
-                                  {tf.name}
+                                  <div>
+                                    <div>{tf.name}</div>
+                                    <div className="text-[10px] text-muted-foreground">{tf.description} — {tf.emissionFactor.toFixed(5)} {tf.unit}</div>
+                                  </div>
                                 </SelectItem>
                               ))}
                             </SelectContent>
@@ -267,7 +270,10 @@ export function Cat7Page() {
                             <SelectContent>
                               {commutingFactorList.map((cf) => (
                                 <SelectItem key={cf.name} value={cf.name}>
-                                  {cf.name}
+                                  <div>
+                                    <div>{cf.name}</div>
+                                    <div className="text-[10px] text-muted-foreground">{cf.description} — {cf.emissionFactor.toFixed(4)} {cf.unit}</div>
+                                  </div>
                                 </SelectItem>
                               ))}
                             </SelectContent>

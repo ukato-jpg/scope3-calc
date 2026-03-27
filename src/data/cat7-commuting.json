@@ -2,51 +2,61 @@
   {
     "name": "オフィス-大都市",
     "emissionFactor": 0.984720643260273,
-    "unit": "kgCO2/人・日"
+    "unit": "kgCO2/人・日",
+    "description": "オフィス勤務 × 政令指定都市・東京23区"
   },
   {
     "name": "オフィス-中都市",
     "emissionFactor": 1.54224250804499,
-    "unit": "kgCO2/人・日"
+    "unit": "kgCO2/人・日",
+    "description": "オフィス勤務 × 人口15万人以上の市"
   },
   {
     "name": "オフィス-小都市A",
     "emissionFactor": 1.83851520939112,
-    "unit": "kgCO2/人・日"
+    "unit": "kgCO2/人・日",
+    "description": "オフィス勤務 × 人口5万〜15万人の市"
   },
   {
     "name": "オフィス-小都市B",
     "emissionFactor": 1.59363417938343,
-    "unit": "kgCO2/人・日"
+    "unit": "kgCO2/人・日",
+    "description": "オフィス勤務 × 人口5万人未満の市"
   },
   {
     "name": "オフィス-町村",
     "emissionFactor": 1.56909942063551,
-    "unit": "kgCO2/人・日"
+    "unit": "kgCO2/人・日",
+    "description": "オフィス勤務 × 町村"
   },
   {
     "name": "工場-大都市",
     "emissionFactor": 1.21987191005653,
-    "unit": "kgCO2/人・日"
+    "unit": "kgCO2/人・日",
+    "description": "工場勤務 × 政令指定都市・東京23区"
   },
   {
     "name": "工場-中都市",
     "emissionFactor": 1.89168363592398,
-    "unit": "kgCO2/人・日"
+    "unit": "kgCO2/人・日",
+    "description": "工場勤務 × 人口15万人以上の市"
   },
   {
     "name": "工場-小都市A",
     "emissionFactor": 1.91702046479577,
-    "unit": "kgCO2/人・日"
+    "unit": "kgCO2/人・日",
+    "description": "工場勤務 × 人口5万〜15万人の市"
   },
   {
     "name": "工場-小都市B",
     "emissionFactor": 1.81071981022489,
-    "unit": "kgCO2/人・日"
+    "unit": "kgCO2/人・日",
+    "description": "工場勤務 × 人口5万人未満の市"
   },
   {
     "name": "工場-町村",
     "emissionFactor": 1.83792725484535,
-    "unit": "kgCO2/人・日"
+    "unit": "kgCO2/人・日",
+    "description": "工場勤務 × 町村"
   }
 ]
