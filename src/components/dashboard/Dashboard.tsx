@@ -9,6 +9,7 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 import { useAppStore } from '@/store/app-store'
 import { useCategoryStore } from '@/store/category-store'
 import { aggregateAll } from '@/engine/aggregator'
+import { findByCode } from '@/db/idea-repository'
 import { CATEGORIES } from '@/lib/constants'
 
 function formatNumber(n: number, decimals = 2): string {
@@ -27,8 +28,7 @@ export function Dashboard() {
   const navigate = useNavigate()
 
   const summary = useMemo(() => {
-    const lookupFn = () => undefined
-    return aggregateAll(data, lookupFn, settings.gwpGeneration, settings.scope1Emission, settings.scope2Emission)
+    return aggregateAll(data, findByCode, settings.gwpGeneration, settings.scope1Emission, settings.scope2Emission)
   }, [data, settings])
 
   const barData = useMemo(() =>

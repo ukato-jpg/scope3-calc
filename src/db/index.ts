@@ -1,18 +1,3 @@
-import Dexie, { type EntityTable } from 'dexie'
-import type { IdeaRecord } from '@/types/idea'
-
-/** IDEA排出原単位のIndexedDBテーブル */
-export type IdeaRecordRow = IdeaRecord & { id?: number }
-
-class Scope3Database extends Dexie {
-  ideaRecords!: EntityTable<IdeaRecordRow, 'id'>
-
-  constructor() {
-    super('scope3-calc')
-    this.version(1).stores({
-      ideaRecords: '++id, productCode, productName',
-    })
-  }
-}
-
-export const db = new Scope3Database()
+// IDEA データは src/data/idea-database.json に埋め込み済み
+// IndexedDBは不要。idea-repository.ts がインメモリで検索を提供
+export {}

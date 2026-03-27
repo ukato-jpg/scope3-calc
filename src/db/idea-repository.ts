@@ -1,33 +1,63 @@
-import { db } from './index'
 import type { IdeaRecord } from '@/types/idea'
+import ideaRaw from '@/data/idea-database.json'
+
+type IdeaCompact = { c: string; n: string; co: string; d: string; u: string; f: number }
+
+/** 埋め込みIDEAデータを展開 */
+const ideaRecords: IdeaRecord[] = (ideaRaw as IdeaCompact[]).map((r) => ({
+  productCode: r.c,
+  productName: r.n,
+  country: r.co,
+  dbCategory: r.d,
+  baseFlow: 1,
+  unit: r.u,
+  emissionFactor: r.f,
+}))
+
+/** コード→レコードのインデックス（O(1)検索） */
+const codeIndex = new Map<string, IdeaRecord>(
+  ideaRecords.map((r) => [r.productCode, r]),
+)
 
 /** IDEA製品コードで完全一致検索 */
-export async function findByCode(code: string): Promise<IdeaRecord | undefined> {
-  return db.ideaRecords.where('productCode').equals(code).first()
+export function findByCode(code: string): IdeaRecord | undefined {
+  return codeIndex.get(code)
 }
 
-/** 製品名でインクリメンタル検索（前方一致） */
-export async function searchByName(query: string, limit = 20): Promise<IdeaRecord[]> {
+/** 製品名で部分一致検索 */
+export function searchByName(query: string, limit = 20): IdeaRecord[] {
   if (!query) return []
   const lower = query.toLowerCase()
-  return db.ideaRecords
-    .filter((r) => r.productName.toLowerCase().includes(lower))
-    .limit(limit)
-    .toArray()
+  const results: IdeaRecord[] = []
+  for (const r of ideaRecords) {
+    if (r.productName.toLowerCase().includes(lower)) {
+      results.push(r)
+      if (results.length >= limit) break
+    }
+  }
+  return results
 }
 
-/** IDEA DBに一括インポート（既存データは全削除） */
-export async function importBulk(records: IdeaRecord[]): Promise<number> {
-  await db.ideaRecords.clear()
-  return db.ideaRecords.bulkAdd(records) as Promise<number>
+/** 製品コードで部分一致検索 */
+export function searchByCode(query: string, limit = 20): IdeaRecord[] {
+  if (!query) return []
+  const lower = query.toLowerCase()
+  const results: IdeaRecord[] = []
+  for (const r of ideaRecords) {
+    if (r.productCode.toLowerCase().includes(lower)) {
+      results.push(r)
+      if (results.length >= limit) break
+    }
+  }
+  return results
 }
 
-/** IDEA DBのレコード数を取得 */
-export async function getCount(): Promise<number> {
-  return db.ideaRecords.count()
+/** レコード数 */
+export function getCount(): number {
+  return ideaRecords.length
 }
 
-/** IDEA DBを全削除 */
-export async function clearAll(): Promise<void> {
-  await db.ideaRecords.clear()
+/** 全レコード取得 */
+export function getAll(): IdeaRecord[] {
+  return ideaRecords
 }
